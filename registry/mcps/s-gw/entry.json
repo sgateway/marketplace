@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../schemas/mcp.schema.json",
+  "id": "s-gw",
+  "type": "mcp",
+  "name": "s-gw",
+  "tagline": "Local credential control for coding agents.",
+  "description": "Connect Cline to an existing local s-gw installation over MCP stdio. Discover credential handles, request bounded credential-backed operations, and review requests locally before execution. Install and complete s-gw setup first. This entry was checked against s-gw v0.1.22.",
+  "author": {
+    "name": "sgateway",
+    "url": "https://github.com/sgateway"
+  },
+  "homepage": "https://s-gw.com",
+  "repo": "https://github.com/sgateway/s-gw",
+  "tags": ["security", "software"],
+  "verified": false,
+  "featured": false,
+  "install": {
+    "args": ["s-gw", "--", "s-gw", "mcp"],
+    "notes": "Requires an existing s-gw installation on PATH and completed local operator setup. Tested server release: @s-gw/s-gw@0.1.22. Complete the setup in https://github.com/sgateway/s-gw#readme before connecting Cline. Keep credentials and unlock configuration in the existing s-gw setup. Do not paste them into Cline. This stdio connection does not install guard mode or create OS isolation."
+  }
+}
